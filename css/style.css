@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    margin: 0 padding: 0;
 }
 
 header h1 {
@@ -38,7 +39,7 @@ p {
 }
 
 .clearfix::after {
-    content: '';
+    content: ' ';
     display: block;
     clear: both;
 }
@@ -69,7 +70,7 @@ p {
     top: 150px;
 }
 
-/*zapis!!!!!!!!!!!1*/
+/*zapis!!!!!!!!!!!*/
 .arrow.left {
     left: 0;
 }
@@ -181,6 +182,27 @@ header a {
 
 
 /* Moja stopka */
+
+footer .column:first-of-type {
+    width: 600px;
+}
 footer .column:last-of-type {
     float: right;
+}
+
+footer .column:first-of-type,
+footer .column:last-of-type {
+    padding: 30px 0 30px 0;
+}
+footer .coulmn:nth-of-type(2) {
+    padding: 10px 0 10px 0;
+    border: 1px solid gold;
+}
+footer a .column {
+    display: block;
+    text-transform: uppercase;
+}
+
+footer span {
+    font-weight: bold;
 }
