@@ -30,30 +30,81 @@
 
     <section id="slider">
         <article class="container clearfix">
-            <img src="images/black_chair.png" alt="To jest czarny fotel z naszej oferty.">
-            <a class="arrow left "href="#"> < </a>
-            <h2>Sit <span>on</span> our <span>chair</span></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <div class="button-wrapper"><a class="button" href="#">Zobacz więcej</a></div>
-            <a class="arrow right "href="#"> > </a>
+            <figure>
+                <img src="images/black_chair.png" alt="To jest czarny fotel z naszej oferty.">
+            </figure>
+            <a class="arrow left " href="#">
+                < </a>
+                    <div class="sliderText">
+                        <h2>Sit <span>on</span> our <span>chair</span></h2>
+                        <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna.</p>
+                        <div class="button-wrapper"><a class="button" href="#">Zobacz więcej</a></div>
+                    </div>
+                    <a class="arrow right " href="#"> > </a>
         </article>
     </section>
 
     <section id="offer">
         <article class="container clearfix">
-            <div class="column"></div>
-            <div class="column"></div>
-            <div class="column"></div>
+            <div class="column productOne">
+                <div class="productTitle">
+                    <h4>Chair CLAIR</h4>
+                </div>
+            </div>
+            <div class="column productTwo">
+                <div class="productTitle">
+                    <h4>Chair MARGARITA</h4>
+                </div>
+            </div>
+            <div class="productInfo">
+                <h4>Finds all inputs</h4>
+                <p>Finds all inputs that are not checked and highlights the next sibling span. Notice there is no change when clicking the checkboxes since no click events have been linked.</p>
+                <p>Notice there is no change when clicking the checkboxes since no click events have been</p>
+            </div>
         </article>
     </section>
 
     <section id="price-list">
         <article class="container clearfix">
             <h3>Cennik</h3>
-            <div class="column"></div>
-            <div class="column"></div>
-            <div class="column"></div>
+            <div class="column basicPlan">
+                <h5>basic plan</h5>
+                <div class="circlePrice">
+                    <p>
+                        85<sup>99</sup><br><sub>PLN/MSC</sub>
+                    </p>
+                </div>
+                <h6 class="gray">Zakup towaru + dowóz</h6>
+                <h6 class="lightgray">Serwis</h6>
+                <button class="buttonColor" type="button" name="button">DOŁĄCZ</button>
+            </div>
+
+            <div class="column standardPlan">
+                <h5>standard plan</h5>
+                <div class="circlePrice">
+                    <p>
+                        <span>95</span><sup>99</sup><br><sub>PLN/MSC</sub>
+                    </p>
+                </div>
+                <h6 class="white">Zakup towaru + dowóz</h6>
+                <h6 class="lightgray">Serwis</h6>
+                <h6 class="white">Gwarancja 5 lat</h6>
+                <button class="buttonWhite" type="button" name="button">DOŁĄCZ</button>
+            </div>
+
+            <div class="column advancePlan">
+                <h5>advance plan</h5>
+                <div class="circlePrice">
+                    <p>
+                        <span>211</span><sup>00</sup><br><sub>PLN/MSC</sub>
+                    </p>
+                </div>
+                <h6 class="gray">Zakup towaru + dowóz</h6>
+                <h6 class="lightgray">Serwis</h6>
+                <h6 class="gray">Gwarancja 6 lat</h6>
+                <h6 class="lightgray">Porady projektanta</h6>
+                <button class="buttonColor" type="button" name="button">DOŁĄCZ</button>
+            </div>
         </article>
     </section>
 
@@ -67,9 +118,11 @@
                         <input type="email" name="email" placeholder="email">
                         <textarea name="message" placeholder="Wiadomość"></textarea>
                     </fieldset>
+
                     <fieldset>
-                        <label><input type="checkbox" name="agreement">Zgadzam się na przetwarzanie danych osobowych</label>
-                        <input type="submit" name="submit">
+                        <div class="formBox"></div>
+                        <label><input type="checkbox" name="agreement"><div class="formOk"></div>Zgadzam się na przetwarzanie danych osobowych</label>
+                        <input type="submit" name="submit" value="WYŚLIJ">
                     </fieldset>
                 </form>
             </div>
@@ -81,7 +134,7 @@
             <div class="column">
                 <p>Copyright 2017 | All Rights Reserved. - Sit On Chair</p>
             </div>
-            <div class="column">
+            <div class="column socials">
                 <a href="#"><img src="images/flickr.png" alt="logo flickr"></a>
                 <a href="#"><img src="images/vimeo.png" alt="logo vimeo"></a>
                 <a href="#"><img src="images/pinterest.png" alt="logo pinterest"></a>
