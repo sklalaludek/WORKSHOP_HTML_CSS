@@ -34,7 +34,7 @@ h3 {
     color: #575757;
     border-bottom: 8px solid #26c7a9;
     width: 285px;
-    margin-top: 37px;
+    padding-top: 37px;
     margin-bottom: 27px;
     font-weight: 500;
     font-size: 21px;
@@ -79,6 +79,7 @@ p {
     border-radius: 10px;
     display: block;
     font-size: 21px;
+    cursor: pointer;
 }
 
 .arrow {
@@ -168,11 +169,6 @@ header a {
 /* Prezentacja produktow w sliderze */
 #slider {
     background: rgba(249,249,250,1);
-    background: -moz-linear-gradient(top, rgba(249,249,250,1) 4%, rgba(249,249,250,1) 58%, rgba(229,228,231,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(4%, rgba(249,249,250,1)), color-stop(58%, rgba(249,249,250,1)), color-stop(100%, rgba(229,228,231,1)));
-    background: -webkit-linear-gradient(top, rgba(249,249,250,1) 4%, rgba(249,249,250,1) 58%, rgba(229,228,231,1) 100%);
-    background: -o-linear-gradient(top, rgba(249,249,250,1) 4%, rgba(249,249,250,1) 58%, rgba(229,228,231,1) 100%);
-    background: -ms-linear-gradient(top, rgba(249,249,250,1) 4%, rgba(249,249,250,1) 58%, rgba(229,228,231,1) 100%);
     background: linear-gradient(to bottom, rgba(249,249,250,1) 4%, rgba(249,249,250,1) 58%, rgba(229,228,231,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9fa', endColorstr='#e5e4e7', GradientType=0 );
 }
@@ -318,7 +314,7 @@ header a {
     height: 23px;
     width: 23px;
     top: -22px;
-    left: 46%;
+    left: 127px;
 }
 
 #price-list .standardPlan::before {
@@ -335,7 +331,7 @@ header a {
     height: 23px;
     width: 23px;
     top: -22px;
-    left: 46%;
+    left: 127px;
 }
 
 #price-list {
@@ -496,15 +492,65 @@ header a {
     height: 150px;
     background-image: url("../images/red_chair.png");
     background-size: contain;
-    background-position: 20%;
+    background-position: center;
     background-repeat: no-repeat;
 }
-
-input[type=checkbox] {
+/*.checkbox {
+    height: 50px;
+    width: 100%;
+}*/
+input[type="checkbox"] {
     visibility: hidden;
 }
 
-.formOk {
+input[type=checkbox] + label {
+    display: inline-block;
+    width: 48px;
+    height: 40px;
+    border: 1px solid #26c7a9;
+    margin-right: 5px;
+    cursor: pointer;
+
+}
+
+input[type=checkbox]:checked + label {
+    background: url("../images/form_ok.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+    width: 48px;
+    height: 40px;
+    border: 1px solid #26c7a9;
+    display: inline-block;
+}
+
+#contact label {
+    height: 40px;
+    width: 100%;
+    color: lightgray;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+/*input[type=checkbox] + label::before {
+    content: attr(type) ': ';
+    display: block;
+    float: left;
+    width: 48px;
+    height: 40px;
+    margin-right: 5px;
+    background-color: white;
+    box-shadow: none;
+}*/
+
+/*input[type=checkbox]:checked + label::before {
+    display: inline-block;
+    background: url("../images/form_ok.jpg");
+    background-position: center;
+    height: 40px;
+    width: 48px;
+    background-repeat: no-repeat;
+}*/
+/*.formOk {
     width: 40px;
     height: 40px;
     background-image: url("../images/form_ok.jpg");
@@ -514,12 +560,10 @@ input[type=checkbox] {
     border: 1px solid #26c7a9;
     float: left;
     margin-right: 10px;
-}
+}*/
 
 input[type=submit] {
-    display: block;
     background-color: #24BAA0;
-    width: 50px;
     height: 50px;
     border-radius: 5px;
     border: none;
@@ -529,14 +573,11 @@ input[type=submit] {
     line-height: 50px;
 }
 
-#contact label {
-    color: lightgray;
-    margin: 20px 0;
-}
 
-#contact input, #contact textarea, #contact label {
+
+#contact textarea, input[type=submit], input[type=email], input[type=text] {
     width: 100%;
-    display: block;
+    display: inline-block;
 }
 
 
