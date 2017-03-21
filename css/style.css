@@ -97,13 +97,12 @@ p {
     right: 0;
 }
 
-/* Czesc naglowkowa strony */
+/* Menu */
 
 header {
     background-color: black;
     color: white;
 }
-
 
 header nav.column {
     float: right;
@@ -125,8 +124,6 @@ header li {
 header li:hover ul{
     display: block;
 }
-
-/*Pod-menu */
 
 header li ul {
     display: none;
@@ -165,8 +162,8 @@ header a {
     text-transform: uppercase;
 }
 
+/* Slider */
 
-/* Prezentacja produktow w sliderze */
 #slider {
     background: rgba(249,249,250,1);
     background: linear-gradient(to bottom, rgba(249,249,250,1) 4%, rgba(249,249,250,1) 58%, rgba(229,228,231,1) 100%);
@@ -214,8 +211,7 @@ header a {
     display: block;
 }
 
-
-/* Oferta produktowa */
+/* Products */
 
 #offer .productOne {
     background-image: url('../images/box1_img.jpg');
@@ -287,8 +283,7 @@ header a {
     margin-left: 21px;
 }
 
-
-/* Cennik */
+/* Pricelist */
 
 #price-list .column::before, #price-list .column::after {
     content: ' ';
@@ -344,7 +339,6 @@ header a {
     text-transform: uppercase;
     margin-top: 25px;
     margin-bottom: 25px;
-
 }
 
 #price-list .standardPlan h5:nth-of-type(1) {
@@ -394,12 +388,12 @@ header a {
     border: 2px solid #26c7a9;
     color: #26c7a9;
 }
+
 .circlePrice p {
     margin-top: 25px;
     font-size: 35px;
     font-weight: bold;
 }
-
 
 .circlePrice sub,
 .circlePrice sup {
@@ -423,7 +417,9 @@ header a {
     bottom: 15px;
     left: 80px;
     border: none;
+    cursor: pointer;
 }
+
 #price-list .buttonColor {
     background-color: #26c7a9;
     color: white;
@@ -434,8 +430,7 @@ header a {
     color: #26c7a9;
 }
 
-
-/* Sekcja kontakt */
+/* Contact */
 
 #contact fieldset:nth-of-type(1) {
     width: 550px;
@@ -495,94 +490,64 @@ header a {
     background-position: center;
     background-repeat: no-repeat;
 }
-/*.checkbox {
-    height: 50px;
-    width: 100%;
-}*/
-input[type="checkbox"] {
+
+input[type=checkbox] {
     visibility: hidden;
+    display: inline-block;
 }
 
 input[type=checkbox] + label {
-    display: inline-block;
-    width: 48px;
     height: 40px;
+    width: 40px;
     border: 1px solid #26c7a9;
-    margin-right: 5px;
+    display: inline-block;
     cursor: pointer;
-
 }
 
 input[type=checkbox]:checked + label {
-    background: url("../images/form_ok.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 90%;
-    width: 48px;
-    height: 40px;
-    border: 1px solid #26c7a9;
-    display: inline-block;
-}
-
-#contact label {
-    height: 40px;
-    width: 100%;
-    color: lightgray;
-    margin-bottom: 20px;
-    display: inline-block;
-}
-/*input[type=checkbox] + label::before {
-    content: attr(type) ': ';
-    display: block;
-    float: left;
-    width: 48px;
-    height: 40px;
-    margin-right: 5px;
-    background-color: white;
-    box-shadow: none;
-}*/
-
-/*input[type=checkbox]:checked + label::before {
-    display: inline-block;
-    background: url("../images/form_ok.jpg");
-    background-position: center;
-    height: 40px;
-    width: 48px;
-    background-repeat: no-repeat;
-}*/
-/*.formOk {
-    width: 40px;
-    height: 40px;
     background-image: url("../images/form_ok.jpg");
-    background-size: contain;
     background-position: center;
+    background-size: 100%;
     background-repeat: no-repeat;
-    border: 1px solid #26c7a9;
-    float: left;
-    margin-right: 10px;
-}*/
+}
+
+.myCheckbox {
+    display: inline-block;
+    width: 40px;
+}
+
+ form p {
+    display: inline-block;
+    width: 250px;
+    font-size: 16px;
+    color: lightgray;
+    line-height: 18px;
+    position: relative;
+    bottom: 5px;
+    margin-left:  5px;
+}
 
 input[type=submit] {
-    background-color: #24BAA0;
-    height: 50px;
-    border-radius: 5px;
+    background-color: #26c7a9;
+    display: inline-block;
+    width: 50px;
+    height: 54px;
     border: none;
+    border-radius: 5px;
     color: white;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
-    line-height: 50px;
+    line-height: 54px;
+    cursor: pointer;
+    margin-top: 4px;
 }
-
-
 
 #contact textarea, input[type=submit], input[type=email], input[type=text] {
     width: 100%;
     display: inline-block;
 }
 
-
-
-/* Moja stopka */
+/* Footer */
 
 footer {
     margin-top: 50px;
